@@ -1,11 +1,10 @@
 import React,{FC} from 'react'
-import './Movie.module.css';
-import styles from './Movie.module.css';
+import './Movie.css';
 
 
-interface IPropType {
-    data: MovieData;
-}
+// interface IPropType {
+//     data: MovieData;
+// }
 
 type MovieData = {
     poster_path?: string,
@@ -14,12 +13,12 @@ type MovieData = {
     release_date?: any,
 }
 
-const MovieTile: FC<IPropType> = ({data}) => {
+const MovieTile = ({poster_path,original_title,title,release_date}: MovieData) => {
     return (
-        <div className={styles.movieTile}>
-          <img src={"https://www.themoviedb.org/t/p/w342/"+data?.poster_path} alt={data?.original_title} /> 
-          <h3>{data?.title}</h3>
-            <span>{data?.release_date}</span>
+        <div className="movieTile">
+          <img src={"https://www.themoviedb.org/t/p/w342/"+poster_path} alt={original_title} /> 
+          <h3>{title}</h3>
+            <span>{release_date}</span>
         </div>
     )
 }
