@@ -1,3 +1,33 @@
+.navbar {
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(32, 28, 36);
+    color: white;
+}
+
+.navbar span {
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 0 2rem;
+}
+
+.navbar input {
+    border: 1px solid rgb(32, 28, 36); 
+    border-radius: 50px;
+    font-size: 1.5rem;
+    margin:auto 0; 
+    padding:0.5rem 1rem
+}
+
+.navbar label {
+    font-size: 2rem;
+    font-weight: 600;
+    margin:auto 1rem;
+}
+
 .movieTile {
     border: 1px solid white;
     border-radius: 15px;

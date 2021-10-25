@@ -19,7 +19,7 @@ export const pokemonApi = createApi({
       query: (id) => `/movie/${id}?api_key=${API_KEY}`,
     }),
     getMostPopularMovies: builder.query<IResult,void>({
-      query: () => `/discover/movie?api_key=${API_KEY}&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&language=en-US`,
+      query: () => `/discover/movie?api_key=${API_KEY}&sort_by=popularity.asc&include_adult=false&include_video=false&page=1&language=en-US`,
     }),
   }),
 })

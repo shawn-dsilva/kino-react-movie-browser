@@ -26,7 +26,7 @@ function MovieList() {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 8,
+      slidesToShow: 5,
       slidesToScroll: 3
     };
 
