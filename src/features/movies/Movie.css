@@ -6,6 +6,7 @@
     height: 4rem;
     background-color: rgb(32, 28, 36);
     color: white;
+    margin-bottom: 3rem;
 }
 
 .navbar span {
@@ -43,7 +44,7 @@
     /* display: flex;
     flex-direction: row; */
     width: 80%;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 

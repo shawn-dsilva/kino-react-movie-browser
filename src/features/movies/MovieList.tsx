@@ -1,6 +1,6 @@
 import React from 'react'
 import MovieTile from './MovieTile';
-import {useGetMostPopularMoviesQuery } from '../../services/movies';
+import {useGetMostPopularMoviesQuery, useGetTrendingQuery } from '../../services/movies';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -9,7 +9,9 @@ import  './Movie.css';
 
 function MovieList() {
 
-    const { data, error, isLoading } = useGetMostPopularMoviesQuery();
+    // const { data, error, isLoading } = useGetMostPopularMoviesQuery();
+    const { data, error, isLoading } = useGetTrendingQuery();
+
 
     let movieList: any;
 
@@ -31,9 +33,9 @@ function MovieList() {
     };
 
     return (
-        <div>
-            <h1>Popular Movies</h1>
-            <div className="movieListContainer">
+        <div className="movieListContainer">
+            <h1>🔥 Trending Movies & TV Shows</h1>
+            <div >
       {error ? (
         <>Oh no, there was an error</>
       ) : isLoading ? (
